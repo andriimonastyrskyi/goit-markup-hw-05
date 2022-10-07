@@ -62,7 +62,7 @@
     <main>
       <section class="hero">
         <h1 class="hero-title">Ефективні рішення для вашого бізнесу</h1>
-        <button type="button" class="btn active-btn">Замовити послугу</button>
+        <button type="button" class="btn active-btn" data-modal-open>Замовити послугу</button>
       </section>
       <!----------------опис adventge-->
       <section class="section advatage-container">
@@ -121,20 +121,23 @@
         <div class="container">
           <h2 class="about-work">Чим ми займаємося</h2>
           <ul class="about-list list">
-            <li class="about-item"><img src="./image/img.jpg" alt="Картинка" width="370" />
+            <li class="about-item">
+              <img src="./image/img.jpg" alt="Картинка" width="370" />
               <div class="about-wrap">
                 <h3 class="about-desc">Десктопні додатки</h3>
               </div>
             </li>
-            <li class="about-item"><img src="./image/img(1).jpg" alt="Картинка1" width="370" />
-            <div class="about-wrap">
+            <li class="about-item">
+              <img src="./image/img(1).jpg" alt="Картинка1" width="370" />
+              <div class="about-wrap">
                 <h3 class="about-desc">Мобільні додатки</h3>
-            </div>
+              </div>
             </li>
-            <li class="about-item"><img src="./image/img(2).jpg" alt="Картинка2" width="370" />
-             <div class="about-wrap">
+            <li class="about-item">
+              <img src="./image/img(2).jpg" alt="Картинка2" width="370" />
+              <div class="about-wrap">
                 <h3 class="about-desc">Дизайнерські рішення</h3>
-            </div>
+              </div>
             </li>
           </ul>
         </div>
@@ -420,7 +423,17 @@
           </ul>
         </div>
       </div>
-      </div>
     </footer>
+    <!-- backdrop -->
+    <div class="hero-backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button data-modal-close type="button" class="btn-close">
+          <svg width="11" height="11" class="icon-close">
+            <use href="./image/symbol-defs.svg#icon-close"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
