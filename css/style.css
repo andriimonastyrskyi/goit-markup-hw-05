@@ -219,7 +219,7 @@ body {
 }
 /* ---------------------секція hero ---------------------*/
 .hero {
-  min-width: 1600px;
+  max-width: 1600px;
   height: 600px;
   margin: 0 auto;
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
@@ -476,8 +476,6 @@ body {
 
 .footer-page {
   background-color: var(--first-background);
-  max-width: 1600px;
-  margin: 0 auto;
 }
 
 .footer-container {
@@ -528,7 +526,7 @@ body {
   color: var(--footer-color);
   font-weight: 700;
   font-size: 14px;
-  line-height: 1.14px;
+  line-height: 1.14;
   text-transform: uppercase;
 }
 
